@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fashion Shop</h1>
+            <div class="search-bar">
+                <input type="text" id="searchinput" placeholder="Cari sebuah produk...">
+                <button id="searchButton" aria-label="search">Cari</button>
+            </div>
+            <div class="cart">
+                <button id="cartbutton" aria-label="view cart">Keranjang (<span id="cartcount">0</span>)</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product" data-id="1" data-name="Atasan Korean Style" data-price="150000">
+                <img src="gambar/24f819e7a15bb269c8719690c1e86663.jpg" width="200px" alt="Atasan Korean Style">
+                <h3>Atasan Korean Style</h3>
+                <p>Rp.150.000</p>
+                <button class="add-to-cart">Tambahkan ke Keranjang</button>
+            </div>
+            <div class="product" data-id="2" data-name="Tas Selempang" data-price="250000">
+                <img src="gambar/8a607963226782f4bbff7f3d99d3443c.jpg_720x720q80.jpg" width="200px" alt="Tas Selempang">
+                <h3>Tas Selempang</h3>
+                <p>Rp.250.000</p>
+                <button class="add-to-cart">Tambahkan ke Keranjang</button>
+            </div>
+            <div class="product" data-id="3" data-name="Tas Selempang" data-price="760000">
+                <img src="gambar/S3f5b376b5dec4ddf96a40ff1136a2957k.jpg_720x720q80.jpg" width="200px" alt="Tas Selempang">
+                <h3>Topi</h3>
+                <p>Rp.760.000</p>
+                <button class="add-to-cart">Tambahkan ke Keranjang</button>
+            </div>
+            <div class="product" data-id="4" data-name="Tas Selempang" data-price="100000">
+                <img src="gambar/8c946dca194d3db0204bdbe09e6e4826.jpg_720x720q80.jpg" width="200px" alt="Tas Selempang">
+                <h3>Sepatu</h3>
+                <p>Rp.100.000</p>
+                <button class="add-to-cart">Tambahkan ke Keranjang</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Keranjang</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: Rp<span id="total-price">0.00</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>Happy Shopping</p>
+        <p>&copy; Fashion Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
